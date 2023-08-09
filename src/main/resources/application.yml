@@ -1,0 +1,16 @@
+server:
+  port: 8089
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/dbseguridad    
+  webflux:
+    base-path: /mssecurity
+  application:
+    name: spring-cloud-ms-security
+    
+#conectarse al servidor de registro
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka       
